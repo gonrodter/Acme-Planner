@@ -110,10 +110,6 @@ public class ManagerTaskUpdateService implements AbstractUpdateService<Manager, 
 		
 		if (!errors.hasErrors("workload")) {
 			
-			errors.state(request, entity.getWorkload() > 0, "workload", "manager.task.create.error.label.negativeWorkload");
-		}
-		if (!errors.hasErrors("workload")) {
-			
 			
 
 			final String a= entity.getWorkload().toString();
